@@ -1,6 +1,4 @@
-FROM Node:Latest
 
-# Use an official Python runtime as a parent image
 FROM Node:Latest
 
 # Set the working directory to /app
@@ -12,5 +10,8 @@ COPY package.json ./
 # Install any needed packages specified in requirements.txt
 RUN pip install
 
+COPY . .
+
+EXPOSE 3000
 # Run app.py when the container launches
 CMD ["node", "index.js"]

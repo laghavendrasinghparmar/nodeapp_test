@@ -1,0 +1,5 @@
+-> Create the Node File
+-> Create a Dockerfile
+-> Build the image 
+-> create the deployment
+->
