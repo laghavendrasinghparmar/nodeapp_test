@@ -4,10 +4,10 @@ metadata:
   name: nodeapp-service
 spec:
   selector:
-    app: nodeapp 
+    app: nodeapp
   type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 5000
-    targetPort: 3000
-    nodePort: 31110
+    port: 80  # Expose the service on port 80
+    targetPort: 8000  # Forward traffic to the container port
+
